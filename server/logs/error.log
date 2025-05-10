@@ -1,0 +1,31 @@
+[2025-05-10 15:28:03] error: Error - Not Found - /
+[2025-05-10 15:28:03] error: Error - Not Found - /favicon.ico
+[2025-05-10 15:29:31] error: Error - Not Found - /https://youtu.be/figrl0aOULs
+[2025-05-10 15:41:14] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:41:14] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:14] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:20] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:41:20] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:20] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:33] error: Error - Not Found - /favicon.ico
+[2025-05-10 15:45:33] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:45:33] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:33] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:41] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:45:41] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:41] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:46:08] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:46:08] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:46:08] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:51:40] error: Error - Not Found - /https://youtu.be/figrl0aOULs
+[2025-05-10 15:52:43] error: Python betiği hata kodu ile sonlandı: 1
+[2025-05-10 15:52:43] error: Hata: 
+[2025-05-10 15:52:43] error: Video özeti oluşturulurken hata: Video özeti oluşturulamadı. Hata kodu: 1
+[2025-05-10 15:52:43] error: Error - Video özeti oluşturulamadı. Hata kodu: 1
+[2025-05-10 15:54:54] error: Video özeti oluşturulurken hata: VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:54:54] error: ValidationError - VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:55:49] error: Video özeti oluşturulurken hata: VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:55:49] error: ValidationError - VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:56:42] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-05-10 15:56:46] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-05-10 15:56:49] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)

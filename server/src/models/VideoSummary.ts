@@ -11,6 +11,7 @@ export interface IVideoSummary extends Document {
   language: string;
   duration: number;
   createdAt: Date;
+  isFavorite: boolean;
 }
 
 const VideoSummarySchema: Schema = new Schema({
@@ -55,6 +56,10 @@ const VideoSummarySchema: Schema = new Schema({
   createdAt: {
     type: Date,
     default: Date.now
+  },
+  isFavorite: {
+    type: Boolean,
+    default: false
   }
 });
 

@@ -22,13 +22,14 @@ declare global {
 }
 
 // Token doğrulama middleware
-export const authenticate = (req: Request, res: Response, next: NextFunction) => {
+export const authenticate = (req: Request, res: Response, next: NextFunction): void => {
   // Bearer token al
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) {
-    return res.status(401).json({ message: 'Yetkilendirme hatası: Token bulunamadı' });
+    res.status(401).json({ message: 'Yetkilendirme hatası: Token bulunamadı' });
+    return;
   }
 
   try {
@@ -44,18 +45,20 @@ export const authenticate = (req: Request, res: Response, next: NextFunction) =>
     next();
   } catch (error) {
     logger.error(`Token doğrulama hatası: ${error}`);
-    return res.status(403).json({ message: 'Geçersiz veya süresi dolmuş token' });
+    res.status(403).json({ message: 'Geçersiz veya süresi dolmuş token' });
   }
 };
 
 // Admin yetkisi kontrolü
-export const isAdmin = (req: Request, res: Response, next: NextFunction) => {
+export const isAdmin = (req: Request, res: Response, next: NextFunction): void => {
   if (!req.user) {
-    return res.status(401).json({ message: 'Yetkilendirme hatası: Kullanıcı bulunamadı' });
+    res.status(401).json({ message: 'Yetkilendirme hatası: Kullanıcı bulunamadı' });
+    return;
   }
 
   if (req.user.role !== UserRole.ADMIN) {
-    return res.status(403).json({ message: 'Erişim engellendi: Admin yetkisi gerekli' });
+    res.status(403).json({ message: 'Erişim engellendi: Admin yetkisi gerekli' });
+    return;
   }
 
   next();

@@ -18,7 +18,15 @@ const app = express();
 
 // Middleware'leri ayarla
 app.use(helmet()); // Güvenlik başlıklarını ayarla
-app.use(cors()); // CORS desteği
+
+// CORS ayarlarını yapılandır - tüm kaynaklara izin ver
+app.use(cors({
+  origin: '*',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
 app.use(express.json()); // JSON gövdeleri için ayrıştırıcı
 app.use(express.urlencoded({ extended: false })); // URL-encoded formlar için ayrıştırıcı
 
@@ -38,6 +46,24 @@ if (!fs.existsSync(pythonDir)) {
 app.use('/api/auth', authRoutes);
 app.use('/api/videos', videoRoutes);
 
+// Statik dosya sunumu
+if (config.isProd) {
+  // Production modunda client build klasörünü sun
+  const clientBuildPath = path.join(__dirname, '../../client/build');
+  
+  if (fs.existsSync(clientBuildPath)) {
+    app.use(express.static(clientBuildPath));
+    
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(clientBuildPath, 'index.html'));
+    });
+    
+    logger.info('Statik dosya sunumu yapılandırıldı');
+  } else {
+    logger.warn('Client build klasörü bulunamadı, statik dosya sunumu yapılandırılamadı');
+  }
+}
+
 // API kök noktası
 app.get('/api', (req, res) => {
   res.json({
@@ -48,7 +74,8 @@ app.get('/api', (req, res) => {
 
 // 404 ve Hata yakalama middleware
 app.use(notFound);
-app.use(errorHandler);
+// Error handler middleware'i doğru tiple kullanıyoruz
+app.use(errorHandler as express.ErrorRequestHandler);
 
 // MongoDB'ye bağlan
 mongoose.connect(config.mongoUri)

@@ -19,12 +19,13 @@ const generateToken = (user: IUser) => {
 };
 
 // Kullanıcı kaydı
-export const register = async (req: Request, res: Response, next: NextFunction) => {
+export const register = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     // Validasyon hataları
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
+      return;
     }
 
     const { name, email, password } = req.body;
@@ -32,7 +33,8 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
     // Email kontrolü
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      return res.status(400).json({ message: 'Bu e-posta adresi zaten kullanılıyor' });
+      res.status(400).json({ message: 'Bu e-posta adresi zaten kullanılıyor' });
+      return;
     }
 
     // Yeni kullanıcı oluştur
@@ -64,12 +66,13 @@ export const register = async (req: Request, res: Response, next: NextFunction) 
 };
 
 // Kullanıcı girişi
-export const login = async (req: Request, res: Response, next: NextFunction) => {
+export const login = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     // Validasyon hataları
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
+      return;
     }
 
     const { email, password } = req.body;
@@ -77,13 +80,15 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
     // Kullanıcı kontrolü
     const user = await User.findOne({ email });
     if (!user) {
-      return res.status(401).json({ message: 'Geçersiz e-posta veya şifre' });
+      res.status(401).json({ message: 'Geçersiz e-posta veya şifre' });
+      return;
     }
 
     // Şifre kontrolü
     const isMatch = await user.comparePassword(password);
     if (!isMatch) {
-      return res.status(401).json({ message: 'Geçersiz e-posta veya şifre' });
+      res.status(401).json({ message: 'Geçersiz e-posta veya şifre' });
+      return;
     }
 
     // JWT token oluştur
@@ -106,15 +111,17 @@ export const login = async (req: Request, res: Response, next: NextFunction) => 
 };
 
 // Mevcut kullanıcı bilgilerini getir
-export const getMe = async (req: Request, res: Response, next: NextFunction) => {
+export const getMe = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     if (!req.user) {
-      return res.status(401).json({ message: 'Yetkilendirme hatası' });
+      res.status(401).json({ message: 'Yetkilendirme hatası' });
+      return;
     }
 
     const user = await User.findById(req.user.id).select('-password');
     if (!user) {
-      return res.status(404).json({ message: 'Kullanıcı bulunamadı' });
+      res.status(404).json({ message: 'Kullanıcı bulunamadı' });
+      return;
     }
 
     res.status(200).json({

@@ -22,6 +22,9 @@ router.use(authenticate);
 // Kullanıcının kaydettiği özetleri getir
 router.get('/my-summaries', videoController.getUserSummaries);
 
+// Videoyu favorilere ekle/çıkar
+router.post('/favorite/:id', videoController.addToFavorites);
+
 // Belirli bir özeti getir
 router.get('/summary/:id', videoController.getSummaryById);
 

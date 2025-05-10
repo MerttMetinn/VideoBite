@@ -1,7 +1,8 @@
 import axios from 'axios';
-import { getTranscript } from 'youtube-transcript-api';
 import logger from './logger';
 import config from '../config/config';
+import { spawn } from 'child_process';
+import path from 'path';
 
 // YouTube transcript API için interface tanımlaması
 interface TranscriptSegment {
@@ -46,30 +47,52 @@ export const getVideoDetails = async (videoId: string) => {
   }
 };
 
-// YouTube video transkript alma
+// YouTube video transkript alma - Python script kullanarak
 export const getYoutubeTranscript = async (videoId: string, language = 'tr') => {
-  try {
-    const transcript = await getTranscript(videoId, {
-      lang: language
-    });
-
-    if (!transcript || transcript.length === 0) {
-      throw new Error('Transkript bulunamadı');
+  return new Promise<{ text: string, segments: TranscriptSegment[] }>((resolve, reject) => {
+    try {
+      const pythonScriptPath = path.join(__dirname, '../python/get_transcript.py');
+      
+      // Python process'i başlat
+      const pythonProcess = spawn('python', [pythonScriptPath, videoId, language]);
+      
+      let scriptOutput = '';
+      let scriptError = '';
+      
+      // Python çıktısını topla
+      pythonProcess.stdout.on('data', (data) => {
+        scriptOutput += data.toString();
+      });
+      
+      // Python hata mesajlarını topla
+      pythonProcess.stderr.on('data', (data) => {
+        scriptError += data.toString();
+      });
+      
+      // İşlem tamamlandığında
+      pythonProcess.on('close', (code) => {
+        if (code !== 0) {
+          logger.error(`Python transcript script error: ${scriptError}`);
+          reject(new Error(`Python transcript script failed: ${scriptError}`));
+          return;
+        }
+        
+        try {
+          const result = JSON.parse(scriptOutput);
+          resolve({
+            text: result.fullTranscript,
+            segments: result.segments
+          });
+        } catch (err) {
+          logger.error(`Python transcript output parse error: ${err}`);
+          reject(new Error(`Failed to parse transcript output: ${err}`));
+        }
+      });
+    } catch (error: any) {
+      logger.error(`YouTube transkript alınırken hata: ${error.message}`);
+      reject(new Error('Video transkripti alınamadı: ' + error.message));
     }
-
-    // Transkripti birleştir
-    const fullTranscript = transcript
-      .map((item: TranscriptSegment) => item.text)
-      .join(' ');
-    
-    return {
-      text: fullTranscript,
-      segments: transcript
-    };
-  } catch (error: any) {
-    logger.error(`YouTube transkript alınırken hata: ${error.message}`);
-    throw new Error('Video transkripti alınamadı: ' + error.message);
-  }
+  });
 };
 
 // YouTube URL geçerliliğini kontrol et

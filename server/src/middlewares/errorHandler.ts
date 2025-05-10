@@ -14,42 +14,46 @@ export const errorHandler = (err: AppError, req: Request, res: Response, next: N
   
   // Mongoose validation hatası
   if (err.name === 'ValidationError') {
-    return res.status(400).json({
+    res.status(400).json({
       success: false,
       message: 'Doğrulama hatası',
       errors: err.errors
     });
+    return;
   }
 
   // Mongoose duplicate key hatası
   if (err.name === 'MongoError' && err.code === 11000) {
-    return res.status(409).json({
+    res.status(409).json({
       success: false,
       message: 'Bu veri zaten mevcut (duplicate key error)'
     });
+    return;
   }
 
   // JWT hatası
   if (err.name === 'JsonWebTokenError') {
-    return res.status(401).json({
+    res.status(401).json({
       success: false,
       message: 'Geçersiz token'
     });
+    return;
   }
 
   // Token süresi dolmuş hatası
   if (err.name === 'TokenExpiredError') {
-    return res.status(401).json({
+    res.status(401).json({
       success: false,
       message: 'Token süresi dolmuş'
     });
+    return;
   }
 
   // Özel durum kodu olan hatalar
   const statusCode = err.statusCode || 500;
   const message = err.message || 'Sunucu hatası';
 
-  return res.status(statusCode).json({
+  res.status(statusCode).json({
     success: false,
     message,
     stack: process.env.NODE_ENV === 'development' ? err.stack : undefined

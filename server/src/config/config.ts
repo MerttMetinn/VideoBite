@@ -9,6 +9,7 @@ interface Config {
   jwtSecret: string;
   nodeEnv: string;
   youtubeApiKey: string;
+  isProd: boolean;
 }
 
 const config: Config = {
@@ -16,7 +17,8 @@ const config: Config = {
   mongoUri: process.env.MONGO_URI || 'mongodb://localhost:27017/videobite',
   jwtSecret: process.env.JWT_SECRET || 'videobite_secret_key',
   nodeEnv: process.env.NODE_ENV || 'development',
-  youtubeApiKey: process.env.YOUTUBE_API_KEY || ''
+  youtubeApiKey: process.env.YOUTUBE_API_KEY || '',
+  isProd: process.env.NODE_ENV === 'production'
 };
 
 export default config; 

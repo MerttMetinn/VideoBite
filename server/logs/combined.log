@@ -1,0 +1,147 @@
+[2025-05-10 15:26:01] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:26:01] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:26:01] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:26:01] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:26:23] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:26:23] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:26:23] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:26:23] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:27:50] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:27:50] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:28:03] error: Error - Not Found - /
+[2025-05-10 15:28:03] error: Error - Not Found - /favicon.ico
+[2025-05-10 15:29:31] error: Error - Not Found - /https://youtu.be/figrl0aOULs
+[2025-05-10 15:32:06] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:32:06] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:32:06] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:32:06] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:32:16] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:32:16] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:41:14] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:41:14] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:14] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:20] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:41:20] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:20] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:41:33] error: Error - Not Found - /favicon.ico
+[2025-05-10 15:44:40] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:44:40] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:45:33] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:45:33] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:33] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:41] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:45:41] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:45:41] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:46:08] error: YouTube video detayları alınırken hata: Request failed with status code 403
+[2025-05-10 15:46:08] error: Video özeti oluşturulurken hata: Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:46:08] error: Error - Video detayları alınamadı: Request failed with status code 403
+[2025-05-10 15:47:19] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:47:19] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:49:22] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:49:22] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:51:12] info: Uygulama kapatılıyor
+[2025-05-10 15:51:21] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:51:21] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:51:40] error: Error - Not Found - /https://youtu.be/figrl0aOULs
+[2025-05-10 15:52:09] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:52:09] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:52:32] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=0e3GPea1Tyg&t=937s
+[2025-05-10 15:52:43] error: Python betiği hata kodu ile sonlandı: 1
+[2025-05-10 15:52:43] error: Hata: 
+[2025-05-10 15:52:43] error: Video özeti oluşturulurken hata: Video özeti oluşturulamadı. Hata kodu: 1
+[2025-05-10 15:52:43] error: Error - Video özeti oluşturulamadı. Hata kodu: 1
+[2025-05-10 15:54:15] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:54:15] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:54:54] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=0e3GPea1Tyg&t=937s
+[2025-05-10 15:54:54] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=0e3GPea1Tyg&t=937s
+[2025-05-10 15:54:54] error: Video özeti oluşturulurken hata: VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:54:54] error: ValidationError - VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:55:49] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 15:55:49] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 15:55:49] error: Video özeti oluşturulurken hata: VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:55:49] error: ValidationError - VideoSummary validation failed: transcript: Transkript zorunludur
+[2025-05-10 15:56:40] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:56:40] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:56:40] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:56:40] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:56:42] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-05-10 15:56:46] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:56:46] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:56:46] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-05-10 15:56:49] error: SyntaxError - Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[2025-05-10 15:57:15] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:57:15] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:57:15] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:57:15] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:57:15] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:57:15] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:57:20] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:57:20] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:57:33] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:57:33] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 15:57:45] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 15:57:45] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 15:59:25] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 15:59:25] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:00:16] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 16:00:16] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=U_LlX4t0A9I
+[2025-05-10 16:00:45] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:00:45] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:02:41] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:02:41] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:03:00] info: Uygulama kapatılıyor
+[2025-05-10 16:03:09] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:03:09] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:03:42] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=1WEAJ-DFkHE
+[2025-05-10 16:03:43] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=1WEAJ-DFkHE
+[2025-05-10 16:10:41] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:10:41] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:10:41] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:10:41] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:10:41] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:10:41] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:11:24] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:11:24] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:11:24] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:11:24] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:11:24] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:11:24] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:14:38] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:14:38] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:14:38] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:14:38] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:14:38] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:14:38] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:14:38] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:14:38] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:14:46] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:14:46] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:16:30] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:16:30] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:16:52] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:16:52] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:16:52] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:16:52] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:19:52] info: Python betiği çalıştırılıyor: C:\Current Projects\VideoBite\server\src\python\video_summary.py
+[2025-05-10 16:19:55] info: Video özeti başarıyla oluşturuldu
+[2025-05-10 16:20:18] info: Python betiği çalıştırılıyor: C:\Current Projects\VideoBite\server\src\python\video_summary.py
+[2025-05-10 16:20:21] info: Video özeti başarıyla oluşturuldu
+[2025-05-10 16:36:09] info: Python betiği çalıştırılıyor: C:\Current Projects\VideoBite\server\src\python\video_summary.py
+[2025-05-10 16:36:11] info: Video özeti başarıyla oluşturuldu
+[2025-05-10 16:39:37] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:39:37] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:39:37] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:39:37] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:40:39] info: Uygulama kapatılıyor
+[2025-05-10 16:41:07] info: MongoDB'ye başarıyla bağlandı
+[2025-05-10 16:41:07] info: Sunucu 5000 portunda çalışıyor - development modu
+[2025-05-10 16:41:20] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:41:20] info: Python betiği çalıştırılıyor: C:\Current Projects\VideoBite\server\src\python\video_summary.py
+[2025-05-10 16:41:23] info: Video özeti başarıyla oluşturuldu
+[2025-05-10 16:41:23] info: Video özeti başarıyla oluşturuldu: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:41:23] info: Özet veritabanına kaydedildi: 9RhWXPcKBI8
+[2025-05-10 16:42:44] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:42:44] info: Var olan özet kullanılıyor: 9RhWXPcKBI8
+[2025-05-10 16:45:07] info: Video özeti oluşturuluyor: https://www.youtube.com/watch?v=9RhWXPcKBI8
+[2025-05-10 16:45:07] info: Var olan özet kullanılıyor: 9RhWXPcKBI8
+[2025-05-10 16:45:30] info: Uygulama kapatılıyor
